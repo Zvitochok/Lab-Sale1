@@ -1,0 +1,72 @@
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  font-size: 14px;
+}
+
+a:hover,
+a:focus {
+  color: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* HEADER*/
+.header-container, .menu-wrapper {
+  display: flex;
+}
+
+.lang-dropdown .navbar-dropdown {
+  width: 180px;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item img {
+  display: block;
+  height: 26px;
+  width: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item span {
+  display: block;
+  margin-left: 10px;
+}
+
+/* Footer*/
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,351 @@
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  font-size: 14px;
+}
+
+a:hover,
+a:focus {
+  color: #2196f3;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* HEADER*/
+.lang-dropdown .navbar-dropdown {
+  width: 180px;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item img {
+  display: block;
+  height: 26px;
+  width: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+}
+
+.lang-dropdown .navbar-dropdown .navbar-item span {
+  display: block;
+  margin-left: 10px;
+}
+
+/* Footer*/
+.footer {
+  background: #2f303a;
+}
+
+.footer-wrap {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0;
+}
+
+.footer-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 69px;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.footer-email {
+  margin-bottom: 9px;
+}
+
+.footer-email,
+.footer-tel {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.subscribe {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.subscribe-btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.subscribe-form {
+  margin-left: 94px;
+}
+
+.social-icons-footer li a {
+  width: 40px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons-footer {
+  margin-top: 20px;
+}
+
+.social-icons-footer li a svg {
+  fill: #fff;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-wrap address {
+    text-align: center;
+  }
+  .footer-wrap .social-icons li {
+    margin: 0;
+  }
+  .footer-wrap .blue-btn {
+    margin-top: 20px;
+  }
+  .footer-wrap .footer-list,
+  .footer-wrap .social-subscribe {
+    width: 50%;
+  }
+  .subscribe-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .subscribe-form {
+    margin-left: 0;
+    text-align: center;
+  }
+  .logo-footer,
+  .footer-list,
+  .subscribe-input {
+    margin-right: 0;
+  }
+  .logo-footer {
+    margin-bottom: 20px;
+  }
+  .subscribe,
+  .subscribe-btn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subscribe-btn {
+    margin: 60px 0 20px 0;
+    display: block;
+  }
+  .social-icons-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .social-icons-footer li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .social-subscribe .subscribe {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-wrap > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-wrap address {
+    text-align: center;
+  }
+  .footer-wrap .social-icons li {
+    margin: 0;
+  }
+  .footer-wrap .blue-btn {
+    margin-top: 20px;
+  }
+  .subscribe-form {
+    margin-top: 60px;
+  }
+  .subscribe-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .subscribe-form {
+    margin-left: 0;
+  }
+  .logo-footer,
+  .footer-list,
+  .subscribe-input {
+    margin-right: 0;
+  }
+  .logo-footer {
+    margin-bottom: 20px;
+  }
+  .subscribe,
+  .subscribe-btn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .social-icons-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .social-icons-footer li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .social-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe-input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
