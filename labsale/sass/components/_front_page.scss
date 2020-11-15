@@ -92,3 +92,23 @@
         }
     }
 }
+
+// Fast
+
+.fast{
+    display: flex;
+    background: #19B5A6;
+    .container{ 
+        display: flex;
+        .img{
+            position: absolute;
+        }
+    }
+   
+    div{
+        font-size: 16px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 0.9);
+        
+    }
+}
