@@ -1,159 +1,196 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title lang="en">Lab Sale</title>
-        <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title lang="en">Lab Sale</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="left_block">
         <a class="logo" href="./index.html" lang="en" aria-label="Логотип">
           <img src="./img/logo.svg" alt="">
         </a>
-      
+
         <div class="menu-wrapper" data-menu>
           <nav class="navigation">
             <ul>
               <li>
-                <a href="#">Головна</a>
+                <a href="#" class="active">Головна</a>
               </li>
               <li>
                 <a href="#">Про проєкт</a>
               </li>
               <li>
-                <a href="#">Направлення</a>
+                <a href="#" class="soon">Направлення</a>
               </li>
               <li>
                 <a href="#">Контакти</a>
               </li>
             </ul>
           </nav>
-        <div>
-          <div class="navbar-end">
-            <div class="navbar-item has-dropdown is-hoverable lang-dropdown">
-              <a class="navbar-link is-arrowless">
-                Оберіть мову:
-                 <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQyVMJWQEATFXJPjzVL5K8pX9pQuyhcJHdkHtLCS45HF4PXb_Rt" alt="">-->
-              </a>
-              <div class="navbar-dropdown is-boxed is-right">
-                <a class="navbar-item">
-                  <img src="./img/ukraine.png" alt="">
-                 <span>Ukrain</span>
-               </a>
-                <a class="navbar-item">
-                   <img src="https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/usa-512.png" alt="">
-                  <span>English</span>
-                </a>
-                <a class="navbar-item">
-                  <img src="https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/usa-512.png" alt="">
-                 <span>Russian</span>
-               </a>
-              </div>
+        </div>
+      </div>
+      <div class="right_block">
+        <span>Оберіть мову:</span>
+        <div class="dropholder">
+          <div class="dropdown">
+            <img src="./img/ukraine.png" alt="">
+          </div>
+          <ul class="menu">
+            <li>
+              <img
+                src="https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/usa-512.png"
+                alt="">
+            </li>
+            <li>
+              <img
+                src="https://cdn0.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality-/283/usa-512.png"
+                alt="">
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="btn_white">
+          Стати партнером
+        </a>
+        <a href="#" class="btn_green">
+          Стати благодійником
+        </a>
+      </div>
+    </div>
+    <section class="top_banner">
+      <div class="left_block">
+        <div class="size_btns">
+          <span>Розмір тексту на сайті:</span>
+          <a href="#" id="standart_btn">Стандартний</a>
+          <a href="#" id="zoom_btn">Збільшений</a>
+        </div>
+        <h1>Допоможемо зберегти <span>сімейний бюджет</span></h1>
+
+        <div class="test_list">
+          <div class="test_item">
+            <div class="image">
+              <img src="./img/covid.svg" alt="">
+            </div>
+            <div class="info_txt">
+              ПЦР-тест<br> на COVID-19
+              <a href="#">Короновірус</a>
+            </div>
+          </div>
+          <div class="test_item inactive">
+            <div class="image">
+              <img src="./img/nexttest.svg" alt="">
+            </div>
+            <div class="info_txt">
+              Зовсім скоро ми<br> додамо нові тести
+              <a href="#">В розробці</a>
             </div>
           </div>
         </div>
-          <a href="#">
-            Стати партнером
-          </a>
-          <a href="#">
-            Стати благодійником
-          </a>
-        </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- Main section -->
-      <section class="">
         <div>
-          <span>Розмір тексту на сайті:</span>
-          <a href="#"> Стандартний</a>
-          <a href="#"> Збільшений</a>
-        </div>
-      <h1>Допоможемо зберегти сімейний бюджет</h1>
-      <div> 
-        <img src="./img/main.svg" alt="">
-      </div>
-      <div>
-        <span>
-          ПЦР-тест на COVID-19
-          <img src="./img/covid.svg" alt="">
-          <a href="#">Короновірус</a>
-        </span>
-        <span>
-          Зовсім скоро ми додамо нові тести
-          <img src="./img/nexttest.svg" alt="">
-          <a href="#">В розробці</a>
-        </span>
-      </div>
-      <div>
-        <div class="">
-          <span>Отримати тест:</span>
-          <a href="#"> Безкоштовно</a>
-          <a href="#"> Зі знижкою</a>
-          <span>* - безкоштовний тест надається тільки для малозахищених верств населення
-          </span>
+          <div class="get_test">
+            <div class="title_get_test">Отримати тест:</div>
+            <div class="btns">
+              <a href="#" class="btn_free"> Безкоштовно</a>
+              <a href="#" class="btn_sale"> Зі знижкою</a>
+              <span>* - безкоштовний тест надається тільки для<br> малозахищених верств населення
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-      </section>
-     <!-- About -->
-      <section>
-          <h2>ЛабСейл 
-            <span>Про проект</span>
-            </h2>
-            <span>Тестування проводяться на реагентах та обладнанні Abbott (США), Euroimmun (Німеччина), BAG Diagnostics (Німеччина), AMEDA Labordiagnostik (Австрія). Тест-системи пройшли клінічні дослідження і мають акредитацію ЄС та США. Просте і зрозуміле онлайн оформлення тестів на COVID-19. </span>
+      <div class="right_block">
+        <div>
+          <img src="./img/main.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </header>
 
-            <ul>
-              <li>
-                <img src="./img/about/labseil1.svg" alt="">
-                <span>Тестів зі знижкою:</span>
-                <span>112</span>
-                <a href="#">Отримати</a> 
-              </li>
-              <li>
-                <img src="./img/about/labseil2.svg" alt="">
-                <span>Безкоштовних тестів:</span>
-                <span>14</span>
-                <a href="#">Отримати</a> </li>
-              <li>
-                <img src="./img/about/labseil3.svg" alt="">
-                <span>Благодійників:</span>
-                <span>7</span>
-                <a href="#">Отримати</a> 
-              </li>
-              <li>
-                <img src="./img/about/labseil4.svg" alt="">
-                <span>Партнерів:</span>
-                <span>1</span>
-                <a href="#">Отримати</a> 
-              </li>
-            </ul>
-      </section>    
-<!-- How it works -->
-<section>
-  <h2>Як працює <span>ЛабСейл</span>?</h2>
-  <ul>
-    <li>
-      <img src="./img/howitsworks/hwlabseil1.svg" alt="">
-      <span>Заповнюйте  форму</span>
-      <span>Обирай тип тесту, переходь до форми,заповнюй  свої данні</span>
-    </li>
-    <li>
-      <img src="./img/howitsworks/hwlabseil2.svg" alt="">
-      <span>Отримуйте ваучер</span>
-      <span>Отримуйте ваучер на електронну почту, або одразу друкуйте</span></li>
-    <li>
-      <img src="./img/howitsworks/hwlabseil3.svg" alt="">
-      <span>Робіть тест</span>
-      <span>Пред’явіть оттриманий ваучер нашому партнеру і виконуйте тест</span></li>
-  </ul>
-</section>
+  <main id="main">
+    <!-- Main section -->
+
+    <!-- About -->
+    <section class="about_us">
+      <div class="container">
+        <h2>
+          <span>ЛабСейл</span>
+          Про проект
+        </h2>
+        <div class="description">
+          Тестування проводяться на реагентах та обладнанні Abbott (США), Euroimmun (Німеччина), BAG Diagnostics
+          (Німеччина), AMEDA Labordiagnostik (Австрія). Тест-системи пройшли клінічні дослідження і мають акредитацію ЄС
+          та США. Просте і зрозуміле онлайн оформлення тестів на COVID-19.
+        </div>
+        <ul class="number_items">
+          <li>
+            <img src="./img/about/labseil1.svg" alt="">
+            <span class="title">Тестів зі знижкою:</span>
+            <span class="numbers">112</span>
+            <a href="#">Отримати</a>
+          </li>
+          <li>
+            <img src="./img/about/labseil2.svg" alt="">
+            <span class="title">Безкоштовних тестів:</span>
+            <span class="numbers">14</span>
+            <a href="#">Отримати</a> </li>
+          <li>
+            <img src="./img/about/labseil3.svg" alt="">
+            <span class="title">Благодійників:</span>
+            <span class="numbers">7</span>
+            <a href="#">Отримати</a>
+          </li>
+          <li>
+            <img src="./img/about/labseil4.svg" alt="">
+            <span class="title">Партнерів:</span>
+            <span class="numbers">1</span>
+            <a href="#">Отримати</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- How it works -->
+    <section class="how_it_works">
+      <div class="container">
+        <h2>
+          Як працює <span>ЛабСейл</span>?
+        </h2>
+        <ul class="how_it_works_list">
+          <li>
+            <img src="./img/howitsworks/hwlabseil1.svg" alt="">
+            <div class="info">
+              <div class="title">Заповнюйте форму</div>
+              <div>Обирай тип тесту, переходь до форми,заповнюй свої данні</div>
+            </div>
+          </li>
+          <li>
+            <img src="./img/howitsworks/hwlabseil2.svg" alt="">
+            <div class="info">
+              <div class="title">Отримуйте ваучер</div>
+              <div>Отримуйте ваучер на електронну почту, або одразу друкуйте</div>
+            </div>
+          </li>
+          <li>
+            <img src="./img/howitsworks/hwlabseil3.svg" alt="">
+            <div class="info">
+              <div class="title">Робіть тест</div>
+              <div>Пред’явіть оттриманий ваучер нашому партнеру і виконуйте тест</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Blago -->
-<section>
+    <section>
       <h2>Наші благодійники</h2>
       <div class="carousel">
         <div>
@@ -178,106 +215,112 @@
           <span>5</span>
         </div>
       </div>
-</section>
+    </section>
     <!-- Fast -->
     <section class="fast">
       <div>
         <img src="./img/fast/fast1.svg" alt="">
-        <span><span>Стань благодійником</span> - допоможи населенню України пережити цей важкий епідеміологічний час, а також отримуй вдячних прихильників свого бренду!</span>
+        <span><span>Стань благодійником</span> - допоможи населенню України пережити цей важкий епідеміологічний час, а
+          також отримуй вдячних прихильників свого бренду!</span>
         <a>Долучитись</a>
       </div>
       <div>
         <img src="./img/fast/fast2.svg" alt="">
-        <span><span>Стань партнером</span>- отримуй замовлення на проведення тестів у корпоративному форматі, підтримаємо людей разом.</span>
+        <span><span>Стань партнером</span>- отримуй замовлення на проведення тестів у корпоративному форматі,
+          підтримаємо людей разом.</span>
         <a>Долучитись</a>
       </div>
     </section>
-        <!-- Our partner -->
+    <!-- Our partner -->
     <section class="our_partners">
       <div>
         <img src="./img/ourpartner/ourpartner1_1.svg" alt="">
         <img src="./img/ourpartner/ourpartner1_2.jpg" alt="">
         <span>топ партнер</span>
-         <span>МедЛаб</span>
-         <span>В даний час лабораторія включає в себе центральний офіс з власне лабораторією і центральним пунктом забору біоматеріалу.</span>
-       </div>
-       <div>
+        <span>МедЛаб</span>
+        <span>В даний час лабораторія включає в себе центральний офіс з власне лабораторією і центральним пунктом забору
+          біоматеріалу.</span>
+      </div>
+      <div>
         <img src="./img/ourpartner/ourpartner2.jpg" alt="">
         <span>топ партнер</span>
-         <span>ДІЛА</span>
-         <span>Признанный национальный лидер по качеству и информационному сервису в лабораторной диагностике.</span>
+        <span>ДІЛА</span>
+        <span>Признанный национальный лидер по качеству и информационному сервису в лабораторной диагностике.</span>
       </div>
     </section>
-        
-    </main>
 
-     <footer class="footer">
-      <div class="footer-wrap">
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div>
+        <img src="./img/footer/logofooter.svg" alt="">
+        <label class="wrapper" for="states">Мова сайту:</label>
+        <select id="language">
+          <option value="ukraine">Українська</option>
+          <option value="english">English</option>
+          <option value="russian">Русский</option>
+        </select>
+        <label class="wrapper" for="states">Розмір тексту:</label>
+        <select id="size">
+          <option value="standart">Стандартний</option>
+          <option value="enlarged">Збільшений</option>
+        </select>
+        <address>
+          <img src="./img/footer/email.svg" alt="">
+          <p class="footer-adress">м. Київ, вул. Омеляновича-Павленка 4/6, 14 поверх</p>
+          <a class="footer-tel" href="tel:+380674648774">+380 67 464 87 74</a>
+          <a class="footer-email" href="help@labsale.ua">help@labsale.ua</a>
+        </address>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Про проєкт</a></li>
+          <li><a href="#">Направлення</a></li>
+          <li><a href="#">Наші партнери</a></li>
+          <li><a href="#">Наші Благодійники</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Безкоштовний тест Covid-19</a></li>
+          <li><a href="#">Тест зі знижкою Covid-19</a></li>
+        </ul>
         <div>
-          <img src="./img/footer/logofooter.svg" alt="">
-          <label class="wrapper" for="states">Мова сайту:</label>
-          <select id="language">
-            <option value="ukraine">Українська</option>
-            <option value="english">English</option>
-            <option value="russian">Русский</option>
-          </select>
-          <label class="wrapper" for="states">Розмір тексту:</label>
-          <select id="size">
-            <option value="standart">Стандартний</option>
-            <option value="enlarged">Збільшений</option>
-          </select>
-          <address>
-            <img src="./img/footer/email.svg" alt="">
-            <p class="footer-adress">м. Київ, вул. Омеляновича-Павленка 4/6, 14 поверх</p>
-            <a class="footer-tel" href="tel:+380674648774">+380 67 464 87 74</a>
-            <a class="footer-email" href="help@labsale.ua">help@labsale.ua</a>
-          </address>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Про проєкт</a></li>
-            <li><a href="#">Направлення</a></li>
-            <li><a href="#">Наші партнери</a></li>
-            <li><a href="#">Наші Благодійники</a></li>
-            <li><a href="#">Контакти</a></li>
+          <b class="subscribe">Ми у соцмережах:</b>
+          <ul class="social-icons social-icons-footer">
+            <li>
+              <a href="" lang="en">
+                <img src="./img/footer/youtube.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" lang="en">
+                <img src="./img/footer/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" lang="en">
+                <img src="./img/footer/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" lang="en">
+                <img src="./img/footer/telegram.svg" alt="">
+              </a>
+            </li>
           </ul>
-          <ul>
-            <li><a href="#">Безкоштовний тест Covid-19</a></li>
-            <li><a href="#">Тест зі знижкою Covid-19</a></li>
-          </ul>
-          <div>
-            <b class="subscribe">Ми у соцмережах:</b>
-            <ul class="social-icons social-icons-footer">
-              <li>
-                <a href="" lang="en">
-                  <img src="./img/footer/youtube.svg" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="" lang="en">
-                  <img src="./img/footer/instagram.svg" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="" lang="en">
-                  <img src="./img/footer/facebook.svg" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="" lang="en">
-                  <img src="./img/footer/telegram.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">(c) 2020. LabSale.   Проект “ЛабСейл” створенний для допомоги малозахищеним верствам населення легше пережити цей важкий час. Проект благодійний і не має на меті комерційне підгрунття.
         </div>
       </div>
-    </footer> 
-    </div> 
-    <!-- <script src="./js/menu.js"></script> -->
-  </body>
+      <div class="copyright">(c) 2020. LabSale. Проект “ЛабСейл” створенний для допомоги малозахищеним верствам
+        населення легше пережити цей важкий час. Проект благодійний і не має на меті комерційне підгрунття.
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="./js/custom.js"></script>
+</body>
+
 </html>
-           

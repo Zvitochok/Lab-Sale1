@@ -1,0 +1,94 @@
+// About us
+.about_us{
+    margin-top: 50px;
+    .description{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: $main-color;
+    }
+}
+.number_items{
+    margin: 60px auto 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        img{
+            margin-bottom: 13px;
+        }
+        .title{
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: center;
+            color: rgba(167, 200, 205, 0.94);
+        }
+        .numbers{
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #7EA0A6;
+        }
+        a{
+            background: #56CCF2;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white-color;
+            margin-top: 15px;
+            padding: 5px 15px;
+        }
+    }
+}
+
+// How it works
+
+.how_it_works{
+    margin-top: 165px;
+    background: #F8FEFF;
+    padding: 40px 0;
+    h2{
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+.how_it_works_list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 55px;
+    li{
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-right: 80px;
+        }
+        img{
+            margin-right: 20px;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            color: #7EA0A6;
+        }
+    }
+}

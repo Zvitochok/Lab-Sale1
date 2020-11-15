@@ -1,0 +1,27 @@
+.about_us {
+  margin-top: 50px;
+}
+
+.about_us .description {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.number_items {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.number_items li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*# sourceMappingURL=about_us.css.map */
